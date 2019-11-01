@@ -1,0 +1,13 @@
+body{
+    background-color: yellow;
+}
+
+h1, h2{
+    font-family: 'Bangers', cursive;
+    color: tomato;
+}
+
+img{
+    border-radius: 100px;
+    border: solid tomato;
+}

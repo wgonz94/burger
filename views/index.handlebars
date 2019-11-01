@@ -3,14 +3,15 @@
 <header>
     <div class="row">
         <div align="center" class="col-sm-12">
-            <h1>Devour the Burger!!</h1>
+            <h1>Devour the Burger!</h1>
+            <hr>
         </div>
     </div>
 </header>
 <div class="center">
     <div class="row">
         <div class="col-sm-4">
-            <h2 align="center">Burgers for the Taking</h2>
+            <h2 align="center">Burgers Created</h2>
             <ul align="center">
                 {{#each burgers}}
                 {{#unless devoured}}
@@ -21,11 +22,11 @@
         </div>
         <div align="center" class="col-sm-4"><br><br>
 
-            {{!-- burger image here --}}
+           <img src="https://www.designindaba.com/sites/default/files/styles/scaledlarge/public/node/news/23566/sonic-burger.jpg?itok=zGk5pjcI" alt="burger_img" width="400px" height="400px">
         </div>
 
         <div class="col-sm-4">
-            <h2 align="center">Devoured</h2>
+            <h2 align="center">Burgers Devoured</h2>
             <ul align="center">
                 {{#each burgers}}
                 {{#if devoured}}
