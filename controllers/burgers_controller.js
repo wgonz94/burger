@@ -1,11 +1,20 @@
 var express = require("express");
-
 var router = express.Router();
+
 var burger = require("../models/burger.js");
 
 //create burger routes locals
+router.get("/", function(req, res) {
+    burger.selectAll(function(data) {
+      var hbsObject = {
+        burgers: data
+      };
+      console.log(hbsObject);
+      res.render("index", hbsObject);
+    });
+  });
 
-router.post("/", function(req, res) {
+router.post("/api/burgers", function(req, res) {
     burger.insertOne([
         "burger_name", "devoured"
     ], [
@@ -15,7 +24,7 @@ router.post("/", function(req, res) {
     });
 });
 
-router.put("/:id", function(req,res) {
+router.put("/api/burgers/:id", function(req,res) {
     var condition = "id = " + req.params.id;
 
     console.log("condition", condition);
@@ -30,6 +39,7 @@ router.put("/:id", function(req,res) {
         }
     });
 });
+
 
 // export router to server.js
 module.exports = router;
