@@ -11,3 +11,8 @@ img{
     border-radius: 100px;
     border: solid tomato;
 }
+
+button.change-devour{
+    border: solid tomato;
+    border-radius: 12px;
+}
