@@ -15,4 +15,6 @@ img{
 button.change-devour{
     border: solid tomato;
     border-radius: 12px;
+    font-family: 'Bangers', cursive;
+    background: yellowgreen;
 }
