@@ -18,3 +18,10 @@ button.change-devour{
     font-family: 'Bangers', cursive;
     background: yellowgreen;
 }
+
+button#submit{
+    border: solid tomato;
+    border-radius: 12px;
+    font-family: 'Bangers', cursive;
+    background: yellowgreen;
+}
